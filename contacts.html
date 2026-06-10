@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Мои хобби</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" style="background-color: rgb(74, 124, 125); border-radius: 5px;">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contacts-wrapper">
+            <div class="info-card">
+                <h2>Мои данные</h2>
+                <ul class="dev-info">
+                    <li><strong>ФИО:</strong> Блудов Алексей</li>
+                    <li><strong>Email:</strong> bludovale303@gmail.com</li>
+                    <li><strong>Тема:</strong> Спорт, кино, игры</li>
+                    <li><strong>Город:</strong> Москва</li>
+                </ul>
+                <div class="socials">
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">VK</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2>Написать мне</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="req">Имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="req">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="mail@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <select id="subject">
+                            <option>Вопрос</option>
+                            <option>Сотрудничество</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="req">Сообщение</label>
+                        <textarea id="message" rows="4" required placeholder="Текст сообщения..."></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Согласие на обработку данных</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Отправить</button>
+                    <div id="successMsg" class="success-msg"></div>
+                </form>
+            </div>
+
+            <div class="extra-card">
+                <h2>Расписание</h2>
+                <div class="schedule">
+                    <p>Пн-Пт: 18:00 - 22:00</p>
+                    <p>Сб-Вс: 12:00 - 23:00</p>
+                </div>
+                
+                <h2>Частые вопросы</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-q">Как быстро отвечаете?</div>
+                        <div class="faq-a">В течение 24 часов</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">Можно предложить тему?</div>
+                        <div class="faq-a">Да, пишите в форму</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">Сотрудничество?</div>
+                        <div class="faq-a">Рассматриваю предложения</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Блудов Алексей, студент 1 курса, 2026</p>
+    </footer>
+
+    <script src="contacts.js"></script>
+</body>
+</html>
